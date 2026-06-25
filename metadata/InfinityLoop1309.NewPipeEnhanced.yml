@@ -5782,10 +5782,8 @@ Builds:
     subdir: PipePipeClient/app
     submodules: true
     sudo:
-      - echo "deb https://deb.debian.org/debian bookworm main" > /etc/apt/sources.list.d/bookworm.list
       - apt-get update
-      - apt-get install -y -t bookworm openjdk-17-jdk-headless
-      - update-java-alternatives -s java-1.17.0-openjdk-amd64
+      - apt-get install -y openjdk-25-jdk-headless
     gradle:
       - yes
     output: build/outputs/apk/release/PipePipe_*-armeabi-v7a-release-unsigned.apk
@@ -5814,10 +5812,8 @@ Builds:
     subdir: PipePipeClient/app
     submodules: true
     sudo:
-      - echo "deb https://deb.debian.org/debian bookworm main" > /etc/apt/sources.list.d/bookworm.list
       - apt-get update
-      - apt-get install -y -t bookworm openjdk-17-jdk-headless
-      - update-java-alternatives -s java-1.17.0-openjdk-amd64
+      - apt-get install -y openjdk-25-jdk-headless
     gradle:
       - yes
     output: build/outputs/apk/release/PipePipe_*-x86-release-unsigned.apk
@@ -5846,13 +5842,11 @@ Builds:
     subdir: PipePipeClient/app
     submodules: true
     sudo:
-      - echo "deb https://deb.debian.org/debian bookworm main" > /etc/apt/sources.list.d/bookworm.list
       - apt-get update
-      - apt-get install -y -t bookworm openjdk-17-jdk-headless
-      - update-java-alternatives -s java-1.17.0-openjdk-amd64
       - apt-get install -y make autoconf automake libtool pkg-config curl doxygen
         nasm cmake gcc gperf texinfo yasm bison autogen wget autopoint meson ninja-build
         ragel groff gtk-doc-tools libtasn1-6-dev libtasn1-bin libgnutls28-dev libunistring-dev
+        openjdk-25-jdk-headless
       - mkdir -p /home/runner/
       - chown vagrant /home/runner/
     gradle:
@@ -5885,13 +5879,11 @@ Builds:
     subdir: PipePipeClient/app
     submodules: true
     sudo:
-      - echo "deb https://deb.debian.org/debian bookworm main" > /etc/apt/sources.list.d/bookworm.list
       - apt-get update
-      - apt-get install -y -t bookworm openjdk-17-jdk-headless
-      - update-java-alternatives -s java-1.17.0-openjdk-amd64
       - apt-get install -y make autoconf automake libtool pkg-config curl doxygen
         nasm cmake gcc gperf texinfo yasm bison autogen wget autopoint meson ninja-build
         ragel groff gtk-doc-tools libtasn1-6-dev libtasn1-bin libgnutls28-dev libunistring-dev
+        openjdk-25-jdk-headless
       - mkdir -p /home/runner/
       - chown vagrant /home/runner/
     gradle:
