@@ -5790,7 +5790,7 @@ Builds:
     binary: 
       https://github.com/InfinityLoop1308/PipePipe/releases/download/v%v/PipePipe_%v-armeabi-v7a-release.apk
     srclibs:
-      - InfinityLoop1308-ffmpeg-kit@efd648489598efdc65e2e2f06ae69e065e257077
+      - InfinityLoop1308-ffmpeg-kit@90c9e6a66318e99a93b5101aeebd88f20073cf1b
     rm:
       - PipePipeClient/doc
       - PipePipeClient/ffmpeg/ffmpeg-kit.aar
@@ -5820,7 +5820,7 @@ Builds:
     binary: 
       https://github.com/InfinityLoop1308/PipePipe/releases/download/v%v/PipePipe_%v-x86-release.apk
     srclibs:
-      - InfinityLoop1308-ffmpeg-kit@efd648489598efdc65e2e2f06ae69e065e257077
+      - InfinityLoop1308-ffmpeg-kit@90c9e6a66318e99a93b5101aeebd88f20073cf1b
     rm:
       - PipePipeClient/doc
       - PipePipeClient/ffmpeg/ffmpeg-kit.aar
@@ -5855,7 +5855,7 @@ Builds:
     binary: 
       https://github.com/InfinityLoop1308/PipePipe/releases/download/v%v/PipePipe_%v-x86_64-release.apk
     srclibs:
-      - InfinityLoop1308-ffmpeg-kit@efd648489598efdc65e2e2f06ae69e065e257077
+      - InfinityLoop1308-ffmpeg-kit@90c9e6a66318e99a93b5101aeebd88f20073cf1b
     rm:
       - PipePipeClient/doc
       - PipePipeClient/ffmpeg/ffmpeg-kit.aar
@@ -5892,7 +5892,7 @@ Builds:
     binary: 
       https://github.com/InfinityLoop1308/PipePipe/releases/download/v%v/PipePipe_%v-arm64-v8a-release.apk
     srclibs:
-      - InfinityLoop1308-ffmpeg-kit@efd648489598efdc65e2e2f06ae69e065e257077
+      - InfinityLoop1308-ffmpeg-kit@90c9e6a66318e99a93b5101aeebd88f20073cf1b
     rm:
       - PipePipeClient/doc
       - PipePipeClient/ffmpeg/ffmpeg-kit.aar
