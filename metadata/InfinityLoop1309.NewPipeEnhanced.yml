@@ -5782,11 +5782,10 @@ Builds:
     subdir: PipePipeClient/app
     submodules: true
     sudo:
-      - echo "deb https://deb.debian.org/debian bullseye main" > /etc/apt/sources.list.d/bullseye.list
+      - echo "deb https://deb.debian.org/debian bookworm main" > /etc/apt/sources.list.d/bookworm.list
       - apt-get update
-      - apt-get install -y -t bullseye openjdk-17-jdk-headless
-      - apt-get install -y -t bullseye openjdk-11-jdk-headless
-      - update-java-alternatives --set java-1.11.0-openjdk-amd64
+      - apt-get install -y -t bookworm openjdk-17-jdk-headless
+      - update-java-alternatives -s java-1.17.0-openjdk-amd64
     gradle:
       - yes
     output: build/outputs/apk/release/PipePipe_*-armeabi-v7a-release-unsigned.apk
@@ -5815,11 +5814,10 @@ Builds:
     subdir: PipePipeClient/app
     submodules: true
     sudo:
-      - echo "deb https://deb.debian.org/debian bullseye main" > /etc/apt/sources.list.d/bullseye.list
+      - echo "deb https://deb.debian.org/debian bookworm main" > /etc/apt/sources.list.d/bookworm.list
       - apt-get update
-      - apt-get install -y -t bullseye openjdk-17-jdk-headless
-      - apt-get install -y -t bullseye openjdk-11-jdk-headless
-      - update-java-alternatives --set java-1.11.0-openjdk-amd64
+      - apt-get install -y -t bookworm openjdk-17-jdk-headless
+      - update-java-alternatives -s java-1.17.0-openjdk-amd64
     gradle:
       - yes
     output: build/outputs/apk/release/PipePipe_*-x86-release-unsigned.apk
@@ -5848,11 +5846,10 @@ Builds:
     subdir: PipePipeClient/app
     submodules: true
     sudo:
-      - echo "deb https://deb.debian.org/debian bullseye main" > /etc/apt/sources.list.d/bullseye.list
+      - echo "deb https://deb.debian.org/debian bookworm main" > /etc/apt/sources.list.d/bookworm.list
       - apt-get update
-      - apt-get install -y -t bullseye openjdk-17-jdk-headless
-      - apt-get install -y -t bullseye openjdk-11-jdk-headless
-      - update-java-alternatives --set java-1.11.0-openjdk-amd64
+      - apt-get install -y -t bookworm openjdk-17-jdk-headless
+      - update-java-alternatives -s java-1.17.0-openjdk-amd64
       - apt-get install -y make autoconf automake libtool pkg-config curl doxygen
         nasm cmake gcc gperf texinfo yasm bison autogen wget autopoint meson ninja-build
         ragel groff gtk-doc-tools libtasn1-6-dev libtasn1-bin libgnutls28-dev libunistring-dev
@@ -5888,11 +5885,10 @@ Builds:
     subdir: PipePipeClient/app
     submodules: true
     sudo:
-      - echo "deb https://deb.debian.org/debian bullseye main" > /etc/apt/sources.list.d/bullseye.list
+      - echo "deb https://deb.debian.org/debian bookworm main" > /etc/apt/sources.list.d/bookworm.list
       - apt-get update
-      - apt-get install -y -t bullseye openjdk-17-jdk-headless
-      - apt-get install -y -t bullseye openjdk-11-jdk-headless
-      - update-java-alternatives --set java-1.11.0-openjdk-amd64
+      - apt-get install -y -t bookworm openjdk-17-jdk-headless
+      - update-java-alternatives -s java-1.17.0-openjdk-amd64
       - apt-get install -y make autoconf automake libtool pkg-config curl doxygen
         nasm cmake gcc gperf texinfo yasm bison autogen wget autopoint meson ninja-build
         ragel groff gtk-doc-tools libtasn1-6-dev libtasn1-bin libgnutls28-dev libunistring-dev
