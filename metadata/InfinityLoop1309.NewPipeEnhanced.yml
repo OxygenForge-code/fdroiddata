@@ -5801,9 +5801,7 @@ Builds:
     build:
       - pushd $$InfinityLoop1308-ffmpeg-kit$$
       - sed -i -e '/main-android/d' -e '/ndk-build/c echo 0' android.sh
-      - JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64 ANDROID_SDK_ROOT=$$SDK$$ ANDROID_NDK_ROOT=$$NDK$$
-        ./android.sh --lts --enable-gmp --enable-openssl --enable-android-media-codec
-        --enable-android-zlib --disable-x86 --disable-arm-v7a --disable-arm-v7a-neon --no-output-redirection
+      - JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64 ANDROID_SDK_ROOT=$$SDK$$ ANDROID_NDK_ROOT=$$NDK$$ ./android.sh --lts --enable-gmp --enable-openssl --enable-android-media-codec --enable-android-zlib --disable-arm-v7a --no-output-redirection
       - popd
       - mv $$InfinityLoop1308-ffmpeg-kit$$/prebuilt/bundle-android-aar-lts/ffmpeg-kit/*.aar
         ../ffmpeg
