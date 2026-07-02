@@ -1,0 +1,24 @@
+Categories:
+  - Internet
+License: GPL-3.0-only
+SourceCode: https://github.com/OxygenForge-code/MixaBrowser
+IssueTracker: https://github.com/OxygenForge-code/MixaBrowser/issues
+Changelog: https://github.com/OxygenForge-code/MixaBrowser/blob/main/CHANGELOG.md
+
+AutoName: Mixa Browser
+
+RepoType: git
+Repo: https://github.com/OxygenForge-code/MixaBrowser
+
+Builds:
+  - versionName: '1.0.0'
+    versionCode: 1
+    commit: 02160e2a21a77dc8bce6b7219cb3b3bb3d7aebe5
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: '1.0.0'
+CurrentVersionCode: 1
